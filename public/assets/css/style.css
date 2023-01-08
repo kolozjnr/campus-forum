@@ -1,0 +1,16 @@
+*{
+
+}
+
+.mydept{
+    background-color: inherit;
+    color: #fff;
+}
+.mydept option{
+    background-color: none;
+    color: #000;
+}
+.label{
+    color: #fff;
+    text-align: left;
+}

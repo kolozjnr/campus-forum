@@ -1,7 +1,14 @@
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-    </div>
+    <section class="section coming-soon" data-section="section3">
+        <div class="container">
+          <div class="row">
+            <!-- Session Status -->
+            <x-auth-session-status class="mb-4" :status="session('status')" />
+            <div class="col-md-6">
+                <div class="right-content">
+                  <div class="top-content">
+                    <h6>{{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}</h6>
+                  </div>
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -22,4 +29,9 @@
             </x-primary-button>
         </div>
     </form>
+    </div>
+</div>
+</div>
+</div>
+</section>
 </x-guest-layout>

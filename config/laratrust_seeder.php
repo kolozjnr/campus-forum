@@ -104,7 +104,7 @@ return [
             'module_1_name' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
-        'agriculture' => [
+        'agricultureword' => [
             'module_1_name' => 'c,r,u,d',
             'profile' => 'r,u'
         ]

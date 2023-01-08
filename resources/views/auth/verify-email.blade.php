@@ -1,8 +1,15 @@
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
-    </div>
-
+    <section class="section coming-soon" data-section="section3">
+        <div class="container">
+          <div class="row">
+            <!-- Session Status -->
+            <x-auth-session-status class="mb-4" :status="session('status')" />
+            <div class="col-md-6">
+                <div class="right-content">
+                  <div class="top-content">
+                    <h6> {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}</h6>
+                  </div>
+    
     @if (session('status') == 'verification-link-sent')
         <div class="mb-4 font-medium text-sm text-green-600">
             {{ __('A new verification link has been sent to the email address you provided during registration.') }}
@@ -28,4 +35,9 @@
             </button>
         </form>
     </div>
+</div>
+</div>
+</div>
+</div>
+</section>
 </x-guest-layout>
